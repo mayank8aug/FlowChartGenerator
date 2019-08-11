@@ -1,0 +1,142 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+#action-container {
+    border: 1px solid #ddd;
+}
+
+#flowchart-container {
+    min-height: 400px;
+}
+
+#droppable {
+    min-height: 400px;
+}
+
+#flowchart-entities {
+    flex-basis: 15%;
+    background: #f2f2f2;
+}
+
+#flowchart-canvas {
+    flex-basis: 60%;
+}
+
+#flowchart-settings {
+    flex-basis: 25%;
+}
+
+.center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.round {
+    border-radius: 50px;
+    border: 1px solid #ff9900;
+    padding: 30px;
+    width: 2vw;
+    background-color: #ffebcc;
+}
+
+.rectangle {
+    border: 1px solid #3399ff;
+    width: 4vw;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e6f2ff;
+}
+
+
+.diamond {
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    border-bottom-color: #e6fffa;
+    position: relative;
+    top: 0px;
+}
+
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -45px;
+    top: 45px;
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    border-top-color: #e6fffa;
+}
+
+.elliptical {
+    border: 1px solid #9966ff;
+    width: 3vw;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #eee6ff;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.decision {
+    top: 30px;
+    left: -28px;
+}
+
+.draggable-dummy {
+    height: 75px;
+    width: 100%;
+    z-index: 1;
+}
+
+.draggable-border {
+    border: 2px dashed darkblue;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot.top {
+    top: -15%;
+}
+
+.action-decision .dot.top {
+    top: 40%;
+}
+
+.action-decision .dot.bottom {
+    top: 150%;
+}

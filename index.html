@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='./script.js' type="text/javascript"></script>
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body onload="init()">
+    <div id="container" class="display-flex flex-column">
+        <div id="action-container">
+            Actions
+        </div>
+        <div id="flowchart-container" class="display-flex">
+            <div id="flowchart-entities" class="display-flex flex-column justify-space-around">
+                <div class="pos-rel">
+                    <div class="round pos-abs center">Start</div>
+                    <div class="cursor-pointer draggable-dummy" data-item-type="round" data-item-text="Start"></div>
+                </div>
+                <div class="pos-rel">
+                    <div class="rectangle pos-abs center">Normal</div>
+                    <div class="cursor-pointer draggable-dummy" data-item-type="rectangle" data-item-text="Normal"></div>
+                </div>
+                <div class="pos-rel">
+                    <div class="diamond pos-rel pos-abs center"><span class="pos-abs decision">Decision</span></div>
+                    <div class="cursor-pointer draggable-dummy" data-item-type="diamond" data-item-text="Decision"></div>
+                </div>
+                <div class="pos-rel">
+                    <div class="elliptical pos-abs center">Model</div>
+                    <div class="cursor-pointer draggable-dummy" data-item-type="elliptical" data-item-text="Model"></div>
+                </div>
+            </div>
+            <div id="flowchart-canvas">
+                <div id="droppable"></div>
+            </div>
+            <div id="flowchart-settings">
+                <div id="header-title">Canvas</div>
+                <div id="label-container">
+                    <span id="label-text">Label</span>
+                    <input type="text" value="" id="label" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

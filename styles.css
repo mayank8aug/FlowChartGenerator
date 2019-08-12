@@ -14,6 +14,10 @@
     justify-content: space-around;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 #container {
     width: 80%;
     margin: auto;
@@ -38,10 +42,12 @@
 
 #flowchart-canvas {
     flex-basis: 60%;
+    border-bottom: 1px solid #ddd;
 }
 
 #flowchart-settings {
     flex-basis: 25%;
+    background: #f2f2f2;
 }
 
 .center {
@@ -106,6 +112,8 @@
 .decision {
     top: 30px;
     left: -28px;
+    width: 4vw;
+    text-align: center;
 }
 
 .draggable-dummy {
@@ -139,4 +147,19 @@
 
 .action-decision .dot.bottom {
     top: 150%;
+}
+
+#label {
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+}
+
+#header-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.node-selected {
+    box-shadow: inset 0px 0px 5px 2px #f50548;
 }
